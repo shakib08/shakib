@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shakib Imtiaz</title>
+        <meta name="viewport" content="width-device-width", inidial-scale="1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+      
+        <div id="coverphoto">
+            <div id="contents">
+                <ul id="content-list">
+                        <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
+                        <li><a href="#Galary" onclick="scrollToSection(event)">Galary</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publication</a></li>
+                        <li><a href="#certificate" onclick="scrollToSection(event)">Certificates & Achievement</a></li>
+                        <li><a href="#CV" onclick="scrollToSection(event)">CV</a></li>
+                        <li><a href="#contact" onclick="scrollToSection(event)">Contact</a></li>
+                </ul>
+
+                <div class="hello"> 
+                    <h1>Hi! This is Shakib</h1>
+                    <span>Welcome to my page!&#128075</span>
+                    <br>
+                    <p id="identity">Front-end developer || Student, Dept of CSE, GUB || Vice President, GUCC-PC</p>
+                </div>
+            </div>
+        </div>  
+
+        <div id="about" class="about">
+            <h1>ABOUT</h1>
+            <hr>
+            <p id="par">I am from Uttara, Dhaka, Bangladesh. My home town is Rangpur. Rangpur is in the East side of Bangladesh. I am a front-end developer. I am completing my Graduation from Green University of Bangladesh in Computer Science & Engineering. I have worked at Bkash LTD as a Call-Center Representative from June 2020 to<span id="dots">...</span><span id="more">December 2020. I left that job for focusing my studies. I am involved in club activities of my university. Currently, I am working as a Technical Vice-President of Green University Computer Club, Permanent Campus. I volunteered at the 4th International Conference of Sustainable Technology for Industry. Also, I was a volunteer of the 2022 ICPC Asia Dhaka Regional Contest. I am very passionate about design and development. Client’s satisfaction is always my first priority. I have knowledge on C, C++, Java, html, css, js, shell-script, php, python, kortln, mysql. Besides I have knowledge on adobe illustrator, adobe photoshop. I have made banners for 2022 ICPC Asia Dhaka Regional Contest. My hobbies are travelling, playing games, watching movies, photographing.</span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+
+            <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("more");
+                  var btnText = document.getElementById("myBtn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+        </div>
+
+
+        <div class="skills">
+          <h2>My Skills</h2>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>MS Excel</li>
+            <li>MS PowerPoint</li>
+            <li>Video Editing</li>
+          </ul>
+        </div>
+
+
+       <div class="programming">
+        <h1>Problem Solving Websites</h1>
+        <a href="https://codeforces.com/profile/shakibimtiazjishan1111" target="_blank">Codeforces</a>
+        <a href="https://www.codechef.com/users/shakib08" target="_blank">CodeCheff</a>
+        <a href="https://www.hackerrank.com/shakibimtiazjis1" target="_blank">Hackerrank</a>
+       </div>
+
+
+        <script>
+            function scrollToSection(event) {
+                event.preventDefault();
+                const targetId = event.target.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+            </script>   
+            
+            <div id="Galary" class="Galary">
+              <h1>GALARY</h1>
+                <figure class="imgfig">
+                  <img src="Galary Photo/guccpc.jpg" alt="guccpc">
+                  <figcaption>GUCCPC Executive Committee 2022</figcaption>
+                </figure>
+                
+                 
+                <figure class="imgfig">
+                  <img src="Galary Photo/icpc.jpg" alt="icpc">
+                  <figcaption>Working as a Volunteer in 2022 ICPC</figcaption>
+                </figure>
+                
+                  
+                <figure class="imgfig">
+                  <img src="Galary Photo/sti2022.jpg" alt="icpc">
+                  <figcaption>Collecting STI 4.0 Certificate</figcaption>
+                </figure>
+
+                <figure class="imgfig">
+                  <img src="Galary Photo/STI4.jpg" alt="icpc">
+                  <figcaption>STI 4.0</figcaption>
+                </figure>
+                
+                <a href="galary.html">See More...</a>
+            </div>
+
+             
+           
+
+            <div id="CV" class="CV">
+
+              <a href="https://drive.google.com/file/d/1jvBxq5FyrKNO_yZjvvZP6q1c6WWJyAdS/view?usp=share_link" download target="_blank">
+                <button class="download-button">Download CV</button>
+              </a>
+              
+            </div>
+
+
+
+            <div id="Certificate" class="certificate">
+              <h1>CERTIFICATE & ACHIEVEMENT</h1>
+  
+              <figure class="imgcer">
+                <img src="Certificates/sticer.jpg" alt="guccpc">
+                <figcaption>Volunteer Certificate of STI 4.0</figcaption>
+              </figure>
+              
+               
+              <figure class="imgcer">
+                <img src="Certificates/icpc.jpg" alt="icpc">
+                <figcaption>2021 ICPC Regional Contest Participation</figcaption>
+              </figure>
+              
+                
+              <figure class="imgcer">
+                <img src="Certificates/gucc-pc-vp.jpg" alt="icpc">
+                <figcaption>Appointed the Technical Vice President of GUCC-PC</figcaption>
+              </figure>
+
+              <figure class="imgcer">
+                <img src="Certificates/Banglalink.jpg" alt="icpc">
+                <figcaption>Certificate for being a volunteer in Bangllalink Curnival</figcaption>
+              </figure>
+
+              <a href="certificate.html">Show More...</a>
+            </div>
+
+
+            <div class="banners">
+              <h1>My designed Banners in 2022 ICPC Asia Dhaka Regional</h1>
+              <p>These are the designed banners that I have designes for 2022 ICPC Asia Dhaka Regional Contest organized by Green University of Bangladesh on 10-11 March 2023. I was a volunteer and the lead graphics designer in the event. Me and my team gave around 35 designs to the ICPC organizing committee. This was a wonderful experience of my life. Some of the designs are shown bellow.</p>
+              <figure class="imgicpc">
+                <img src="icpc-banners/2022 ICPC Asia Dhaka Regional.jpg" alt="guccpc">
+              </figure>
+              
+               
+              <figure class="imgicpc">
+                <img src="icpc-banners/Festoon Banner 1 copy.jpg" alt="icpc">
+              </figure>
+              
+                
+              <figure class="imgicpc">
+                <img src="icpc-banners/Festoon Banner 2 copy.jpg" alt="icpc">
+              </figure>
+
+              <figure class="imgicpc">
+                <img src="icpc-banners/x- Banner 2 (400 × 600 px).jpg" alt="icpc">
+
+            </div>
+
+
+            <div id="contact" class="contact">
+              <section class="contact">
+                <h2>Contact Me</h2>
+                <hr>
+                <ul>
+                  <li>
+                    <a href="mailto:shakib.cse.gub@gmail.com">
+                      <i class="fas fa-envelope"></i> shakib.cse.gub@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+8801986559703">
+                      <i class="fas fa-phone"></i> 01986559703
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+8801824519128">
+                      <i class="fas fa-mobile-alt"></i> 01824519128
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/shakib.imtiaz.33/" target="_blank">
+                      <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/shakib-imtiaz-7164271a2/" target="_blank">
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shakib08" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i> East Mollartek, Sarderpara road, Dakhshinkhan, Dhaka 1230
+                  </li>
+                </ul>
+              </section>
+                     
+            </div>
+    </body>
+</html>
